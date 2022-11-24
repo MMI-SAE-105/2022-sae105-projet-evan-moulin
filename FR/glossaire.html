@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen:false}">  
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What have we become</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+
+<header>
+       
+    <a href="index.html"><img src="/public/img/logo.svg" alt="logo site"></a>
+
+<button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">
+   <img src="/public/img/menu.svg" alt="menu burger"> 
+</button>
+
+<nav id="mainNav" x-show="menuIsOpen">
+
+
+<ul>
+    <li><a href="france.html">France</a></li>
+    <li><a href="musique.html">Musique</a></li>
+    <li><a href="robots.html">Robots</a></li>
+    <li><a href="Lucy.html">Lucy</a></li>
+    <li><a href="technologie.html">Technologie</a></li>
+    <li><a href="regret.html">Climat</a></li>
+</ul>
+
+<ul>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="à-propos.html">À propos</a></li>
+    <li><a href="autres-projets.html">Autres projets</a></li>
+    <li><a href="glossaire.html">Glossaire</a></li>
+</ul>
+
+</nav>
+
+    </header>
+
+    <main>
+        <h1>Glossaire</h1>
+
+        <ul>
+            <li> <h3>Gaz à effet de serre :</h3>
+            <p>
+                Gaz d'origine naturelle absorbant et réémettant une partie des rayons solaires phénomènes à l'origine de l'effet de serre.
+            </p>
+            </li>
+
+            <h3>NASA :</h3> <p>La National aeronautics and space administration  est l'organisme en charge du programme spatial civil des Etats-Unis.</p>
+
+
+        </ul>
+    </main>
+
+    <footer>
+   
+        <p>
+        Evan Moulin <br>
+        Groupe B2 <br>
+      <a href="mailto:evanmoulin25@gmail.com">evanmoulin25@gmail.com</a> <br>
+        Contact 
+    </p>
+     
+        <a href="https://www.instagram.com/?hl=fr "><img src="/public/img/logo-insta.jpg" alt="logo insta"></a>
+       <a href="https://twitter.com/"><img src="/public/img/logo-twitter.jpg" alt="logo twitter"></a> 
+       <a href="https://www.facebook.com/"><img src="/public/img/logo-facebook.jpg" alt="logo facebook"></a> 
+
+        <p>
+
+            projet réalisé dans le cadre d’un exercice
+            pédagogique au département <a href="http://mmimontbeliard.com/">MMI de Montbéliard</a> 
+        </p>
+</footer>
+
+</body>
+</html>
