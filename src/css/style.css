@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(184, 212, 255);
+   }
+   
+   header {
+       background-color: rgb(51, 111, 204);
+       position: fixed;
+       top: 0;
+       left: 0;
+       height: 63px;
+       width: 100%;
+       z-index: 1;
+       display: flex;
+       justify-content: space-between;
+   }
+   
+    
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 24px;
+    margin-right: 20px;
+}
+       
+
+   
+   footer {
+    background-color: black;
+   }
+
+.logo{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+   
+   
+   .logo_mmi{
+background: none;
+
+   }
+
+.arriere_plan{
+
+    margin-left: -5px;
+
+}
