@@ -1,47 +1,105 @@
+@import url(layout/footer.css);
+@import url();
+
+
 body {
     background-color: rgb(184, 212, 255);
+    margin: 0;
+    font-family: "Mulish";
    }
    
-   header {
-       background-color: rgb(51, 111, 204);
-       position: fixed;
-       top: 0;
-       left: 0;
-       height: 63px;
-       width: 100%;
-       z-index: 1;
-       display: flex;
-       justify-content: space-between;
-   }
-   
-    
-button{
-    background: none;
-    border: none;
-    cursor: pointer;
+/**
+Menu Navigation
+**/
+
+.menu-nav {
+
+     margin: auto;
+     margin-top: 0px;
+     margin-right: 0px;
+     background-color:  rgb(51, 111, 204);
+     border-radius: 30px;
+     width: 292px;
+     height: 720px;
+     z-index: 2;
+     
+}
+
+.icon-croix {
+    height: 35px;
+
+}
+
+.icon-croix span {
+    margin-top: 20px;
+    margin-right: 25px;
+    float: right;
+}
+
+.nav-list nav ul li {
     margin-top: 24px;
-    margin-right: 20px;
+    list-style-type: none;
 }
-       
 
-   
-   footer {
-    background-color: black;
-   }
-
-.logo{
-  margin-left: 30px;
-  margin-top: 10px;
+.nav-list nav ul li a {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
 }
-   
-   
-   .logo_mmi{
-background: none;
+    
 
-   }
+.item-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 34px;
+}
 
-.arriere_plan{
+.separateur {
+    position: absolute;
+    width: 150px;
+    border: 0.5px solid black;
+    margin-left: 25px;
+}
 
-    margin-left: -5px;
 
+/**
+Header
+**/
+
+header {
+    background-color: rgb(51, 111, 204);
+    position: fixed;
+    height: 63px;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 30px;  
+}
+
+.button-menu {
+    margin-right: 30px;
+    position: fixed;
+    margin-left: 85%;
+    background: transparent ;
+}
+
+/**
+Arriere-plan
+**/
+
+
+/**
+Main
+**/
+
+.title{
+    text-align: center;
 }
