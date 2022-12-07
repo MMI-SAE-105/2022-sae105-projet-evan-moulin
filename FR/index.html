@@ -14,22 +14,22 @@
 </head>
 
 <body>
-
+ 
     <header>
         <span class="logo">
             <a href="index.html"><img src="/public/img/logo.svg" alt="logo site"></a>
         </span>
 
         <div class="button-menu">
-            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">
-                <span class="material-icons"> menu
+            
+                <span class="material-icons" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" x-show=" ! menuIsOpen" x-transition:leave-end.delay.400ms x-transition:enter.delay.380ms> menu
                 </span>
-            </button>
+           
         </div>
 
-        <div class="menu-nav" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms.transition>
+        <div class="menu-nav" id="mainNav" x-show="menuIsOpen" x-transition.duration.400ms.transition>
             <div class="icon-croix" >
-                <span class="material-icons"> 
+                <span class="material-icons" @click="menuIsOpen = ! menuIsOpen"> 
                     close
                 </span>
             </div>
@@ -173,30 +173,55 @@
                 
 
     </main>
+        
+            <footer>
+                <div class="footer">
+                    <div class="container-logo-with-info">
+                        <div class="logo-with-info">
+                            
+                        
+                        <div class="info">
+                            <ul>
+                                <li>Evan Moulin</li>
+                                <li> Groupe B2</li>
+                            </ul>
+                        </div>
+                        <div class="logo-mmi">
+                            <img src="/public/img/logo-mmi1.png" alt="logo mmi">
+                        </div>
+                        </div>
+                        <div class="list-mail-with-contact">
+                            <ul>
+                                <li>
+                                    <span class="mailto"><a href="mailto:evanmoulin25@gmail.com">evanmoulin25@gmail.com</a></span>
+                                </li>
+                                <li>Contact</li>
+                            </ul> 
+                        </div>
+                                  
+                       
+                    </div>   
+                       
+   
+                    <div class="logo-contact">
+                        <a href="https://www.instagram.com/?hl=fr"></a><img src="/public/img/logo-insta.webp" alt="logo insta"></a>
+                        <a href="https://twitter.com/"><img src="/public/img/logo-twitter.webp" alt="logo twitter"></a> 
+                        <a href="https://www.facebook.com/"><img src="/public/img/logo-facebook.webp" alt="logo facebook"></a>
 
-    <footer>
-        <div class="logo_mmi"> 
-             <img src="/public/img/logo-mmi.webp" alt="Logo mmi">
-        </div>
-       
-            <p>
-                Evan Moulin <br>
-                Groupe B2 <br>
-                <a href="mailto:evanmoulin25@gmail.com"> evanmoulin25@gmail.com</a> <br>
-                Contact 
-            </p>
-              
-            <a href="https://www.instagram.com/?hl=fr "><img src="/public/img/logo-insta.webp" alt="logo insta"></a>
-            <a href="https://twitter.com/"><img src="/public/img/logo-twitter.webp" alt="logo twitter"></a> 
-            <a href="https://www.facebook.com/"><img src="/public/img/logo-facebook.webp" alt="logo facebook"></a> 
-             
-            <div class="footer">
-                <p>
-                     projet réalisé dans le cadre d’un exercice
-                    pédagogique au département <a href="http://mmimontbeliard.com/">MMI de Montbéliard</a> 
-                </p>
-            </div>
-        </footer>
-            
+                    </div>
+                    <div class="bas-de-footer">
+                        <p>
+                            <span id="1">projet réalisé dans le cadre d’un exercice</span>
+                    
+                            <span>
+                                pédagogique au département 
+                                <a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>
+                            </span>  
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        
+
 </body>
 </html>
