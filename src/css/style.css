@@ -1,7 +1,9 @@
 @import url(layout/footer.css);
 @import url(components/menu.css);
 @import url(layout/header.css);
-
+@import url(components/menu.css);
+@import url(utils/variables.css);
+@import url();
 
 *{
     margin: 0px;
@@ -20,14 +22,17 @@ Menu Navigation
 
 .menu-nav {
 
-     margin: auto;
-     margin-top: 0px;
-     margin-right: 0px;
-     background-color:  rgb(51, 111, 204);
-     border-radius: 30px;
-     width: 292px;
-     height: 720px;
-     z-index: 2;
+    margin: auto;
+    margin-top: 0px;
+    margin-right: 0px;
+    background-color:  rgb(51, 111, 204);
+    border-radius: 30px;
+    width: 292px;
+    height: 720px;
+    z-index: 2;
+    position: fixed;
+    right: 0;
+    top: 0;
      
 }
 

@@ -1,0 +1,54 @@
+.menu-nav {
+
+    margin: auto;
+    margin-top: 0px;
+    margin-right: 0px;
+    background-color:  rgb(51, 111, 204);
+    border-radius: 30px;
+    width: 292px;
+    height: 720px;
+    z-index: 2;
+    position: fixed;
+    right: 0;
+    top: 0;
+     
+}
+
+.icon-croix {
+    height: 35px;
+
+}
+
+.icon-croix span {
+    margin-top: 20px;
+    margin-right: 25px;
+    float: right;
+    cursor: pointer;
+}
+
+.nav-list nav ul li {
+    margin-top: 24px;
+    list-style-type: none;
+}
+
+.nav-list nav ul li a {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+    
+
+.item-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 34px;
+}
+
+.separateur {
+    position: absolute;
+    width: 150px;
+    border: 0.5px solid black;
+    margin-left: 25px;
+}
