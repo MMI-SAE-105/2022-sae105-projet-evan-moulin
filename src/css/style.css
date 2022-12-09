@@ -3,7 +3,7 @@
 @import url(layout/header.css);
 @import url(components/menu.css);
 @import url(utils/variables.css);
-@import url();
+@import url(/src/fonts/font.css);
 
 *{
     margin: 0px;
@@ -20,60 +20,7 @@ body {
 Menu Navigation
 **/
 
-.menu-nav {
 
-    margin: auto;
-    margin-top: 0px;
-    margin-right: 0px;
-    background-color:  rgb(51, 111, 204);
-    border-radius: 30px;
-    width: 292px;
-    height: 720px;
-    z-index: 2;
-    position: fixed;
-    right: 0;
-    top: 0;
-     
-}
-
-.icon-croix {
-    height: 35px;
-
-}
-
-.icon-croix span {
-    margin-top: 20px;
-    margin-right: 25px;
-    float: right;
-    cursor: pointer;
-}
-
-.nav-list nav ul li {
-    margin-top: 24px;
-    list-style-type: none;
-}
-
-.nav-list nav ul li a {
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-}
-    
-
-.item-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 34px;
-}
-
-.separateur {
-    position: absolute;
-    width: 150px;
-    border: 0.5px solid black;
-    margin-left: 25px;
-}
 
 
 
@@ -87,95 +34,5 @@ Main
 }
 
 
-/**
-footer
-**/
 
-
-.footer {
-  
-    
-    color: white;
-    margin-left: 22px;
-    margin-right: 22px;
-
-}
-
-footer{
-    background-color: black;
-    width: 100%;
-    height: 355px;
-    padding-top: 43px;
-    margin-top: 190px;
-
-}
-
-.logo-with-info {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0;
-    align-items: center;
-}
-
-
-.mailto a {
-    text-decoration: underline;
-    color: white
-    
-}
-
-.container-logo-with-info {
-    font-size: 22px;
-    list-style-type: none;
-}
-
-.container-logo-with-info ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.list-mail-with-contact {
-    margin-top: 0;
-}
-
-.container-logo-with-info ul li {
-    margin-top: 10px;
-}
-
-.logo-contact {
-    margin-top: 20px;
-    display: flex;
-    justify-content: start;
-
-   
-}
-
-.logo-contact a {
-    margin-left: 22px;
-}
-
-.logo-contact a:first-child {
-margin-left: 0;
-}
-
-.bas-de-footer {
-    margin-top: 35px;
-}
-
-.bas-de-footer p {
-margin-bottom: 20px;
-}
-
-.bas-de-footer p span {
-    margin-bottom: 0px;
-}
-
-#1{
-    margin-bottom: 10px;
-}
-
-.bas-de-footer p span a {
-    color: white;
-    text-decoration: underline;
-}
 
