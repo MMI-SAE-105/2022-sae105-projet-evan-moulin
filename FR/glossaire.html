@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>What have we become</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="stylesheet" href="/src/css/style.css">
@@ -14,38 +15,102 @@
 <body>
 
     <header>
-        
-        <div class="logo">
+        <span class="logo">
             <a href="index.html"><img src="/public/img/logo.svg" alt="logo site"></a>
+        </span>
+
+        <div class="drapeau">
+            <a href="/EN/index.html"><img src="/public/img/drapeau-anglais.svg" alt="Drapeau anglais"></a>
         </div>
-                    
+        <div class="button-menu">
             
-                <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">
-                   <img src="/public/img/menu.svg" alt="menu burger"> 
-                </button>
+                <span class="material-icons" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" x-show=" ! menuIsOpen" x-transition:leave-end.delay.200ms x-transition:enter.delay.200ms> menu
+                </span>
+           
+        </div>
+
         
-                <nav id="mainNav" x-show="menuIsOpen">
-        
-        
-                <ul>
-            <li><a href="france.html">France</a></li>
-                    <li><a href="musique.html">Musique</a></li>
-                    <li><a href="robots.html">Robots</a></li>
-                    <li><a href="Lucy.html">Lucy</a></li>
-                    <li><a href="technologie.html">Technologie</a></li>
-                    <li><a href="regret.html">Climat</a></li>
-                </ul>
-        
-                <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="à-propos.html">À propos</a></li>
-                    <li><a href="autres-projets.html">Autres projets</a></li>
-                    <li><a href="glossaire.html">Glossaire</a></li>
-                </ul>
-        
+
+        <div class="menu-nav" id="mainNav" x-show="menuIsOpen" x-transition.duration.400ms.transition>
+            <div class="icon-croix" >
+                <span class="material-icons" @click="menuIsOpen = ! menuIsOpen"> 
+                    close
+                </span>
+            </div>
+            <div class="nav-list">
+                <nav>
+                    <ul>
+                        <li class="item-nav">
+                            <a href="france.html">France</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="musique.html">Musique</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="robots.html">Robots</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="Lucy.html">Lucy</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="technologie.html">Technologie</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="regret.html">Climat</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                    </ul>
+
+                    <div class="separateur"></div>
+
+                    <ul>
+                        <li class="item-nav">
+                            <a href="contact.html">Contact</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="à-propos.html">À propos</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="autres-projets.html">Autres projets</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="glossaire.html">Glossaire</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                    </ul>
                 </nav>
-            
-                    </header>
+            </div>
+        </div>
+
+    </header>
     <main>
         <h1>Glossaire</h1>
 

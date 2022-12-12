@@ -4,6 +4,7 @@
 @import url(components/menu.css);
 @import url(utils/variables.css);
 @import url(/src/fonts/font.css);
+@import url(vendors/normalize.css);
 
 *{
     margin: 0px;
@@ -28,10 +29,6 @@ Menu Navigation
 /**
 Main
 **/
-
-.title{
-    text-align: center;
-}
 
 
 
