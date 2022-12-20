@@ -115,39 +115,40 @@
     <main>
 
         <h1>Contact</h1>
-        <h2>Contactez-nous:</h2>
+    <div class="box">
         <form>
-        <div>
-            <label for="prenom">Prénom :</label>
-            <input type="text" id="prenom" name="user_name">
+            <h2 id="contactez-nous">Contactez-nous :</h2>
+            <div class="prenom-nom">
+                <label for="prenom">Prénom :</label>
+
+                <label for="nom">Nom :</label>
+            </div>
+            <div class="input-prenom-nom">
+                <input type="text" id="prenom" name="user_name">
+                <input type="text" id="nom" name="user_name">
+            </div>
             
-        </div>
-        <div>
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="user_name">
-        </div>
-        <div>
-
             <label for="">E-mail&nbsp;:</label>
-            <input type="email" id="mail" name="user_mail">
-        
-        </div>
-        <div>
-            <label for="telephone">Numéro de téléphone :</label>
-            <input type="text" id="telepohne" name="user_name">
-        </div>
-        <div>
-            <label for="msg">Message :</label>
-            <textarea id="msg" name="user_message"></textarea>
-        </div>
-        <div class="button">
-            <button type="envoyer">Envoyer le message</button>
-        </div>
-    </form>
-</main>
+            <label for="telephone">Téléphone :</label>
+            
 
-<footer>
-    <div class="footer">
+            <input type="email" id="mail" name="user_mail">
+            <input type="text" id="telepohne" name="user_name">
+            
+            
+            <label for="msg">Message :</label>
+            
+            
+            <textarea id="msg" name="user_message"></textarea>
+            
+            <input class="button" type="submit"></button>
+            
+        </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
         <div class="container-logo-with-info">
             <div class="logo-with-info">
                 
