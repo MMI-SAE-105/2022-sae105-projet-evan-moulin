@@ -10,4 +10,6 @@ h1, h2, h3 , h4 {
     font-family: "Mulish";
 }
 
-
+h4 {
+    font-size: small;
+}
