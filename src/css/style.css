@@ -113,3 +113,13 @@ Title header
     padding-left: 114px ;
     size: 147px;
 }
+
+/**
+Main Homepage
+**/
+
+.all_title_homepage {
+    text-align: center;
+    margin-bottom: 22px;
+    margin-top: 100px;
+}
