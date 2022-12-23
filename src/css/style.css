@@ -155,5 +155,10 @@ Main other pages
 .first_title_all_pages {
     padding-top: 80px;
     text-align: center;
+}
 
+.image_all_pages {
+    text-align: center;
+    margin: auto;
+    display: flex;
 }
