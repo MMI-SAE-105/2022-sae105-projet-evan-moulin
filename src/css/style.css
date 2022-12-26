@@ -109,7 +109,7 @@ Title header
 
 .title_header {
     padding-top: 45px;
-    padding-left: 114px ;
+    padding-left: 114px;
     size: 147px;
 }
 
@@ -141,7 +141,7 @@ Main Homepage
 
 .image_homepage {
     width: 100%;
-    image-rendering: auto;
+    
 }
 
 .h1_homepage {
@@ -157,8 +157,54 @@ Main other pages
     text-align: center;
 }
 
-.image_all_pages {
-    text-align: center;
+
+.image_between_title_paragraphes {
+   
     margin: auto;
+    text-align: center;
     display: flex;
+    margin-bottom: 22px;
+}
+
+.image_before_title {
+    
+    padding-top: 38px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+}
+
+.image_between_paragraphes {
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+}
+
+
+.h2_all_pages {
+    margin-top: 25px;
+    margin-left: 22px;
+    
+}
+
+.h3_all_pages {
+    
+    margin-left: 22px;
+    margin-top: 38px;
+    margin-bottom: 22px;
+   
+}
+
+.h2_filmographie {
+    margin-top: 75px;
+    margin-left: 22px   ;
+}
+
+.title_filmographie {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 45px;
 }
