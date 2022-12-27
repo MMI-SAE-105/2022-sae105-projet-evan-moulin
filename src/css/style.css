@@ -109,8 +109,9 @@ Title header
 
 .title_header {
     padding-top: 45px;
-    padding-left: 114px;
+    padding-left: 65px;
     size: 147px;
+    margin: auto;
 }
 
 /**
@@ -207,4 +208,25 @@ Main other pages
     text-align: center;
     text-decoration: underline;
     margin-top: 45px;
+}
+
+.link_clip {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.link_clip p {
+    font-weight: bold;
+}
+
+.link_clip a {
+    margin-left: 22px;
+    margin-right: 22px;
+    font-size: small;
+}
+
+.title_timeline {
+    margin-top: 75px;
+    text-align: center;
 }
