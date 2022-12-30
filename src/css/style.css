@@ -229,6 +229,7 @@ Main other pages
 .title_timeline {
     margin-top: 75px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .paragraphe_all_pages {
@@ -240,3 +241,80 @@ Main other pages
 a {
     color: black;
 }
+
+/**
+timeline
+**/
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.single-box {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+}
+.date-area {
+  display: flex;
+  order: 2;
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+  flex-basis: 100px;
+}
+.date-area>span {
+  font-size: 20px;
+  line-height: 70px;
+  margin: auto;
+  background: #14b6c1;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.content {
+  text-align: center;
+  padding: 20px;
+  border-radius: 25px;
+  color: #000;
+  order: 3;
+  width: 80%;
+  padding-left: 10px;
+  background: #fff;
+}
+.content {
+  margin-bottom: 3%;
+}
+.content h2 {
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+
+@media (min-width: 640px) {
+    .content, .custom {
+      width: 40%;
+    }
+    .box-right .content {
+      order: 1;
+      padding-right: 10px;
+      border-radius: 25px;
+    }
+    .box-right .custom {
+      order: 3;
+    }
+  }
+  
+
+  /**
+  Filmographie
+  **/
+
+  .paragraphes_filmographie {
+    text-align: center;
+    margin-bottom: 20px;
+  }
