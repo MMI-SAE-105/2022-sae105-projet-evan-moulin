@@ -1,0 +1,15 @@
+:root {
+   /* Color styles */
+    --primary: #B8D4FF ;
+    --headerColor: #336FCC ;
+
+    /* text styles */   
+    --text-XXL : 32px ; 
+    --text-XL: 24px ;
+    --text-L: 20px ;
+    --text-M: 18px ;
+    --text-article: 16px ;
+    --text-S: 15px ;
+
+}
+

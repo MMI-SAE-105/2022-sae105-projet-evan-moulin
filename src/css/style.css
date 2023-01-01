@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: rgb(184, 212, 255);
+    background-color: var(--primary);
     margin: 0px;
     font-family: 'Mulish', sans-serif;
    }
@@ -110,8 +110,12 @@ Title header
 .title_header {
     padding-top: 45px;
     padding-left: 65px;
-    size: 147px;
     margin: auto;
+    
+}
+
+.title_header h4 {
+    font-size: var(--text-S);
 }
 
 /**
@@ -122,6 +126,7 @@ Main Homepage
     text-align: center;
     margin-bottom: 22px;
     margin-top: 100px;
+    font-size: var(--text-XL);
 }
 
 .read_article a {
@@ -131,12 +136,14 @@ Main Homepage
     margin-top: 18px;
     color: black;
     text-decoration: underline;
+    text-align: var(--text-article);
 }
 
 .paragraphe_homepage {   
     margin-left: 22px;
     margin-right: 22px;
     margin-top: 20px;
+    font-size: var(--text-M);
 }
 
 
@@ -147,6 +154,7 @@ Main Homepage
 
 .h1_homepage {
     text-align: center;
+    font-size: var(--text-XXL);
 }
 
 /**
@@ -156,6 +164,8 @@ Main other pages
 .first_title_all_pages {
     padding-top: 80px;
     text-align: center;
+    font-size: var(--text-XXL); 
+    
 }
 
 
@@ -187,7 +197,8 @@ Main other pages
 
 .h2_all_pages {
     margin-top: 25px;
-    margin-left: 22px;
+    margin-left: 22px;  
+    font-size: var(--text-XL);
     
 }
 
@@ -196,18 +207,21 @@ Main other pages
     margin-left: 22px;
     margin-top: 38px;
     margin-bottom: 22px;
-   
+    font-size: var(--text-L); 
 }
 
 .h2_filmographie {
     margin-top: 75px;
-    margin-left: 22px   ;
+    margin-left: 22px;
+    font-size: var(--text-XL);
 }
 
 .title_filmographie {
     text-align: center;
     text-decoration: underline;
     margin-top: 45px;
+    font-size: var(--text-L);
+    
 }
 
 .link_clip {
@@ -229,23 +243,32 @@ Main other pages
 .title_timeline {
     margin-top: 75px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+    font-size: var(--text-L);
 }
 
 .paragraphe_all_pages {
     margin-left: 22px;
     margin-right: 22px;
+    font-size: var(--text-article);
     
 }
 .paragraphes_autres_projet {
     text-align: center;
-
+    font-size: var(--text-article);
 }
 
 .title_autres_projet {
     text-align: center;
     margin-top: 35px;
     margin-bottom: 20px;
+    font-size: var(--text-XL);
+}
+
+.paragraphe_a_propos {
+    margin-top: 40px;
+    margin-left: 22px;
+    margin-right: 22px;
 }
 
 a {
@@ -327,6 +350,7 @@ timeline
   .paragraphes_filmographie {
     text-align: center;
     margin-bottom: 20px;
+    font-size: var(--text-article);
   }
 
 
