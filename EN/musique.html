@@ -7,100 +7,217 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>What have we become</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
 
 
-<header>
-       
-    <a href="index.html"><img src="/public/img/logo.svg" alt="logo site"></a>
+    <header>
+        <span class="title_header"><h4>What have we become?</h4></span>
+        <span class="logo">
+            <a href="index.html"><img src="/public/img/logo-site.svg" alt="logo site"></a>
+        </span>
 
-<button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">
-   <img src="/public/img/menu.svg" alt="menu burger"> 
-</button>
+        <div class="drapeau">
+            <a href="/FR/musique.html"><img src="/public/img/drapeau-francais.svg" alt="Drapeau français"></a>
+        </div>
+        <div class="button-menu">
+            
+                <span class="material-icons" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" x-show=" ! menuIsOpen" x-transition:leave-end.delay.200ms x-transition:enter.delay.200ms> menu
+                </span>
+           
+        </div>
 
-<nav id="mainNav" x-show="menuIsOpen">
+        
 
+        <div class="menu-nav" id="mainNav" x-show="menuIsOpen" x-transition.duration.400ms.transition>
+            <div class="icon-croix" >
+                <span class="material-icons" @click="menuIsOpen = ! menuIsOpen"> 
+                    close
+                </span>
+            </div>
+            <div class="nav-list">
+                <nav>
+                    <ul>
+                        <li class="item-nav">
+                            <a href="france.html">France</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="musique.html">Music</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="robots.html">Robots</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="Lucy.html">Lucy</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="technologie.html">Technology</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="regret.html">Climat</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                    </ul>
 
-<ul>
-    <li><a href="france.html">France</a></li>
-    <li><a href="musique.html">Musique</a></li>
-    <li><a href="robots.html">Robots</a></li>
-    <li><a href="Lucy.html">Lucy</a></li>
-    <li><a href="technologie.html">Technologie</a></li>
-    <li><a href="regret.html">Climat</a></li>
-</ul>
+                    <div class="separateur"></div>
 
-<ul>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="à-propos.html">À propos</a></li>
-    <li><a href="autres-projets.html">Autres projets</a></li>
-    <li><a href="glossaire.html">Glossaire</a></li>
-</ul>
-
-</nav>
+                    <ul>
+                        <li class="item-nav">
+                            <a href="contact.html">Contact</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="à-propos.html">About us</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="autres-projets.html">Other projects </a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="glossaire.html">Glossary</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
     </header>
+</div>
+
 
     <main>
 
-       <h1>Les bons vivants – Le trottoir d’en face</h1> 
+       <h1 class="first_title_all_pages">Les bons vivants – Le trottoir d’en face</h1> 
 
-       <h2>La belle époque</h2>
+       <h2 class="h2_all_pages">The good old days</h2>
 
        <section>
 
-        <h3>Qui sont-ils ?</h3>
-        <p>
-            Cette musique qui se nomme « les bons vivants » et qui nous vient du groupe Le trottoir d’en face, nous présente une bande d’amis ils sont originaires d’Orthez, c’est un beau petit village de campagne dans lequel tout ses amis apprécient leur vie et rien ne peut les rendre plus heureux que leur musique leur petit village de campagne et les bons moments qu’ils se partagent tous ensemble.       
+        <h3 class="h3_all_pages">Who are they?</h3>
+        <p class="paragraphe_all_pages">
+            This music which is called "les bons vivants" and which comes to us from the group <a href="https://fr-fr.facebook.com/letrottoirdenface/">Le trottoir d’en face</a>, presents us a band of friends they come from Orthez, it is a beautiful small country village in which all these friends appreciate their life and nothing can make them happier than their music, their small country village and the good moments which they share all together .       
         </p>
 
-        <img src="/public/img/musique1.webp" alt="image les bons vivants">
+        <img class="image_before_title" src="/public/img/musique1.webp" alt="image les bons vivants">
 
        </section>
 
        <section>
 
-        <h3>La réalité de la vie</h3>
-        <p>
-            Je trouve que cette musique est captivante, je partage l’avis de ses huit amis, que la plus belle chose à vivre ce n’est pas de rester derrière les réseaux sociaux toute la journée ou rester enfermé chez soi, mais bien de sortir pour aller retrouver tous ses amis pour partager un bon repas et puis discuter de tout et de rien. Pour ma part, c’est comme ça que je profite le mieux de ma vie, après tout chacun est libre de profiter de la vie comme il le sent. Je suis tout de même assez amateur, mais je pense que cette musique nous fait avoir la conscience que profiter de ses proches et peut être l’une des plus belles choses que l’on puisse vivre, il faut savoir faire des compromis pour ne pas s’enfermer dans le virtuelle, mais aussi pour ne pas être complètement déconnecté du monde technologique.
-        </p>
+            <h3 class="h3_all_pages">The reality of life</h3>
 
-        <img src="/public/img/musique2.webp" alt="image les bons vivants">
+            <p class="paragraphe_all_pages">
+                I find this music captivating, I share the opinion of his eight friends, that the most beautiful thing to live is not to stay behind social networks all day or to stay locked up at home, but to go out and meet all your friends to share a good meal and then discuss everything and anything. 
+            </p>
 
-        <p>
-        J’écoute souvent cette musique quand je suis justement dans une soirée en campagne avec mes amis, nous vivons typiquement les mêmes moments que le trottoir d’en face à mis en œuvre dans leur clip. Cela nous permet de sortir de notre bulle et puis de penser à autre chose que tous les problèmes que l’on rencontre quotidiennement dans notre vie. Les émotions que cette musique me procure sont bien meilleures que celle que je peux avoir derrière mon écran de téléphone. C’est donc pour cela que j’ai choisi cette musique.
-        </p>
+            <p class="paragraphe_all_pages">
+                For me, this is how I enjoy my life the best, after all everyone is free to enjoy life as they feel. I'm quite an amateur, but I think that this music makes us aware that enjoying our loved ones can be one of the most beautiful things we can live, we have to make compromises in order not to get stuck in the virtual world, but also not to be completely disconnected from the technological world.
+            </p>
 
-        <img src="/public/img/play.svg" alt="logo play"> <a href="https://www.youtube.com/watch?v=ZRKoy-KDDzs">https://www.youtube.com/watch?v=ZRKoy-KDDzs</a>
+            <img class="image_between_paragraphes" src="/public/img/musique2.webp" alt="image les bons vivants">
+
+            <p class="paragraphe_all_pages">
+                I often listen to this music when I'm just at a country party with my friends, we typically experience the same moments that the pavement across the street has implemented in their video. It allows us to get out of our bubble and think about something else than all the problems we face in our daily lives. The emotions that this music gives me are much better than the ones I can have behind my phone screen. So that's why I chose this music.
+            </p>
+        </section>
+
+        <section>
+            <div class="link_clip">
+                <p>clip available below:</p>
+                <img class="image_between_paragraphes" src="/public/img/musique3.webp" alt="image les bons vivants">
+                <a href="https://www.youtube.com/watch?v=ZRKoy-KDDzs">https://www.youtube.com/watch?v=ZRKoy-KDDzs</a>   
+            </div>   
+        </section>
+            
+                      
+            
+            
+            
+         
 
        </section>
 
-       <img src="/public/img/musique3.webp" alt="image les bons vivants">
-
+       
     </main> 
     
     <footer>
-   
-        <p>
-        Evan Moulin <br>
-        Groupe B2 <br>
-      <a href="mailto:evanmoulin25@gmail.com">evanmoulin25@gmail.com</a> <br>
-        Contact 
-    </p>
-     
-        <a href="https://www.instagram.com/?hl=fr "><img src="/public/img/logo-insta.webp" alt="logo insta"></a>
-       <a href="https://twitter.com/"><img src="/public/img/logo-twitter.webp" alt="logo twitter"></a> 
-       <a href="https://www.facebook.com/"><img src="/public/img/logo-facebook.webp" alt="logo facebook"></a> 
+        <div class="footer">
+            <div class="container-logo-with-info">
+                <div class="logo-with-info">
+                    
+                
+                <div class="info">
+                    <ul>
+                        <li>Evan Moulin</li>
+                        <li> Group B2</li>
+                    </ul>
+                </div>
+                <div class="logo-mmi">
+                    <img src="/public/img/logo-mmi1.png" alt="logo mmi">
+                </div>
+                </div>
+                <div class="list-mail-with-contact">
+                    <ul>
+                        <li>
+                            <span class="mailto"><a href="mailto:evanmoulin25@gmail.com">evanmoulin25@gmail.com</a></span>
+                        </li>
+                        <li>Contact</li>
+                    </ul> 
+                </div>
+                          
+               
+            </div>   
+               
 
-        <p>
+            <div class="logo-contact">
+                <a href="https://www.instagram.com/?hl=fr"></a><img src="/public/img/logo-insta.svg" alt="logo insta"></a>
+                <a href="https://www.facebook.com/"><img src="/public/img/logo-facebook.svg" alt="logo facebook"></a>
+                <a href="https://twitter.com/"><img src="/public/img/logo-twitter.svg" alt="logo twitter"></a> 
 
-            projet réalisé dans le cadre d’un exercice
-            pédagogique au département <a href="http://mmimontbeliard.com/">MMI de Montbéliard</a> 
-        </p>
-</footer>
+            </div>
+            <div class="bas-de-footer">
+                <p>
+                    <span id="1">project carried out as part of an exercise</span>
+            
+                    <span>
+                        teaching at the department 
+                        <a href="http://mmimontbeliard.com/">MMI of Montbéliard</a>
+                    </span>  
+                </p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

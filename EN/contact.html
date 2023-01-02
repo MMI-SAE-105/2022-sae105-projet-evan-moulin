@@ -7,95 +7,194 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>What have we become</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
 
-<header>
-       
-    <a href="index.html"><img src="/public/img/logo.svg" alt="logo site"></a>
+    <header>
+        <span class="title_header"><h4>What have we become?</h4></span>
+        <span class="logo">
+            <a href="index.html"><img src="/public/img/logo-site.svg" alt="logo site"></a>
+        </span>
 
-<button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">
-   <img src="/public/img/menu.svg" alt="menu burger"> 
-</button>
+        <div class="drapeau">
+            <a href="/FR/contact.html"><img src="/public/img/drapeau-francais.svg" alt="Drapeau français"></a>
+        </div>
+        <div class="button-menu">
+            
+                <span class="material-icons" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" x-show=" ! menuIsOpen" x-transition:leave-end.delay.200ms x-transition:enter.delay.200ms> menu
+                </span>
+           
+        </div>
 
-<nav id="mainNav" x-show="menuIsOpen">
+        
 
+        <div class="menu-nav" id="mainNav" x-show="menuIsOpen" x-transition.duration.400ms.transition>
+            <div class="icon-croix" >
+                <span class="material-icons" @click="menuIsOpen = ! menuIsOpen"> 
+                    close
+                </span>
+            </div>
+            <div class="nav-list">
+                <nav>
+                    <ul>
+                        <li class="item-nav">
+                            <a href="france.html">France</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="musique.html">Music</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="robots.html">Robots</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="Lucy.html">Lucy</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="technologie.html">Technology</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="regret.html">Climat</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                    </ul>
 
-<ul>
-    <li><a href="france.html">France</a></li>
-    <li><a href="musique.html">Musique</a></li>
-    <li><a href="robots.html">Robots</a></li>
-    <li><a href="Lucy.html">Lucy</a></li>
-    <li><a href="technologie.html">Technologie</a></li>
-    <li><a href="regret.html">Climat</a></li>
-</ul>
+                    <div class="separateur"></div>
 
-<ul>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="à-propos.html">À propos</a></li>
-    <li><a href="autres-projets.html">Autres projets</a></li>
-    <li><a href="glossaire.html">Glossaire</a></li>
-</ul>
-
-</nav>
+                    <ul>
+                        <li class="item-nav">
+                            <a href="contact.html">Contact</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="à-propos.html">About us</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="autres-projets.html">Other projects</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="glossaire.html">Glossary</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
     </header>
 
     <main>
 
-        <h1>Contact</h1>
-        <h2>Contactez-nous:</h2>
-        <form>
-        <div>
-            <label for="prenom">Prénom :</label>
-            <input type="text" id="prenom" name="user_name">
+        <h1 class="first_title_all_pages">Contact</h1>
+        <div class="box">
+            <form>
+                <h2 id="contactez-nous">Contact us :</h2>
+                <div class="prenom-nom">
+                    <label for="prenom">First name :</label>
+    
+                    <label for="nom">Name :</label>
+                </div>
+                <div class="input-prenom-nom">
+                    <input type="text" id="prenom" name="user_name">
+                    <input type="text" id="nom" name="user_name">
+                </div>
+                <div class="email-telephone">
+                    <label for="">E-mail&nbsp;:</label>
+                    <label for="telephone">Telephone :</label>
+                </div> 
+                <div class="input-email-telephone">
+                <input type="email" id="mail" name="user_mail">
+                <input type="text" id="telepohne" name="user_name">
+                </div>
+                <div class="message">
+                    <label for="msg">Message :</label>
+                </div>
+                <div class="text-msg">
+                    <textarea id="msg" name="user_message"></textarea>
+                </div>
+                <input class="button" type="submit"></button>
             
+            </form>
         </div>
-        <div>
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="user_name">
-        </div>
-        <div>
+    </main>
 
-            <label for="">E-mail&nbsp;:</label>
-            <input type="email" id="mail" name="user_mail">
-        
-        </div>
-        <div>
-            <label for="telephone">Numéro de téléphone :</label>
-            <input type="text" id="telepohne" name="user_name">
-        </div>
-        <div>
-            <label for="msg">Message :</label>
-            <textarea id="msg" name="user_message"></textarea>
-        </div>
-        <div class="button">
-            <button type="envoyer">Envoyer le message</button>
-        </div>
-    </form>
-</main>
+    <footer>
+        <div class="footer">
+            <div class="container-logo-with-info">
+                <div class="logo-with-info">
+                    
+                
+                <div class="info">
+                    <ul>
+                        <li>Evan Moulin</li>
+                        <li> Group B2</li>
+                    </ul>
+                </div>
+                <div class="logo-mmi">
+                    <img src="/public/img/logo-mmi1.png" alt="logo mmi">
+                </div>
+                </div>
+                <div class="list-mail-with-contact">
+                    <ul>
+                        <li>
+                            <span class="mailto"><a href="mailto:evanmoulin25@gmail.com">evanmoulin25@gmail.com</a></span>
+                        </li>
+                        <li>Contact</li>
+                    </ul> 
+                </div>
+                          
+               
+            </div>   
+               
 
-<footer>
-   
-    <p>
-    Evan Moulin <br>
-    Groupe B2 <br>
-  <a href="mailto:evanmoulin25@gmail.com">evanmoulin25@gmail.com</a> <br>
-    Contact 
-</p>
- 
-    <a href="https://www.instagram.com/?hl=fr "><img src="/public/img/logo-insta.webp" alt="logo insta"></a>
-   <a href="https://twitter.com/"><img src="/public/img/logo-twitter.webp" alt="logo twitter"></a> 
-   <a href="https://www.facebook.com/"><img src="/public/img/logo-facebook.webp" alt="logo facebook"></a> 
+            <div class="logo-contact">
+                <a href="https://www.instagram.com/?hl=fr"></a><img src="/public/img/logo-insta.svg" alt="logo insta"></a>
+                <a href="https://www.facebook.com/"><img src="/public/img/logo-facebook.svg" alt="logo facebook"></a>
+                <a href="https://twitter.com/"><img src="/public/img/logo-twitter.svg" alt="logo twitter"></a> 
 
-    <p>
-
-        projet réalisé dans le cadre d’un exercice
-        pédagogique au département <a href="http://mmimontbeliard.com/">MMI de Montbéliard</a> 
-    </p>
-</footer>
+            </div>
+            <div class="bas-de-footer">
+                <p>
+                    <span id="1">project carried out as part of an exercise</span>
+            
+                    <span>
+                        teaching at the department
+                        <a href="http://mmimontbeliard.com/">MMI of Montbéliard</a>
+                    </span>  
+                </p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

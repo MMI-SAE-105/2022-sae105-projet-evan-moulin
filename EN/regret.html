@@ -7,113 +7,205 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>What have we become</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
 
 
-<header>
-       
-    <a href="index.html"><img src="/public/img/logo.svg" alt="logo site"></a>
+    <header>
+        <span class="title_header"><h4>What have we become?</h4></span>
+        <span class="logo">
+            <a href="index.html"><img src="/public/img/logo-site.svg" alt="logo site"></a>
+        </span>
 
-<button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">
-   <img src="/public/img/menu.svg" alt="menu burger"> 
-</button>
+        <div class="drapeau">
+            <a href="/FR/regret.html"><img src="/public/img/drapeau-francais.svg" alt="Drapeau français"></a>
+        </div>
+        <div class="button-menu">
+            
+                <span class="material-icons" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" x-show=" ! menuIsOpen" x-transition:leave-end.delay.200ms x-transition:enter.delay.200ms> menu
+                </span>
+           
+        </div>
 
-<nav id="mainNav" x-show="menuIsOpen">
+        
 
+        <div class="menu-nav" id="mainNav" x-show="menuIsOpen" x-transition.duration.400ms.transition>
+            <div class="icon-croix" >
+                <span class="material-icons" @click="menuIsOpen = ! menuIsOpen"> 
+                    close
+                </span>
+            </div>
+            <div class="nav-list">
+                <nav>
+                    <ul>
+                        <li class="item-nav">
+                            <a href="france.html">France</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="musique.html">Music</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="robots.html">Robots</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="Lucy.html">Lucy</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="technologie.html">Technology</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="regret.html">Climat</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                    </ul>
 
-<ul>
-    <li><a href="france.html">France</a></li>
-    <li><a href="musique.html">Musique</a></li>
-    <li><a href="robots.html">Robots</a></li>
-    <li><a href="Lucy.html">Lucy</a></li>
-    <li><a href="technologie.html">Technologie</a></li>
-    <li><a href="regret.html">Climat</a></li>
-</ul>
+                    <div class="separateur"></div>
 
-<ul>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="à-propos.html">À propos</a></li>
-    <li><a href="autres-projets.html">Autres projets</a></li>
-    <li><a href="glossaire.html">Glossaire</a></li>
-</ul>
+                    <ul>
+                        <li class="item-nav">
+                            <a href="contact.html">Contact</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="à-propos.html">About us</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="autres-projets.html">Autres projets</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="glossaire.html">Glossary   </a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
-</nav>
+    </header>
 
-</header>
-
-<main>
-    <h1>Espoir</h1>
-        <h2>Le réchauffement climatique</h2>
+    <main>
+        <h1 class="first_title_all_pages">Regret</h1>
+        <h2 class="h2_all_pages">Global warming</h2>
 
         <section>
 
-            <h3>Des efforts nécessaires</h3>
-            <p>
-                Aujourd’hui, à l’âge de mes 18 ans, le réchauffement climatique fait partie des choses les plus grave que 
-                L’activité humaine est créée. Nous devons tous limiter nos déplacements inutiles, et même favoriser les
-                 déplacements à vélo ou alors utiliser les transports en commun pour produire le moins possible de gaz a
-                Effet de serre. Ces efforts sont faits pour que l’on puisse tout avoir un avenir convenable. D’après nos
-                Politiques, dans le futur, les voitures thermiques n’existeront plus. Elles seront toutes remplacées par des
-                voitures électriques ou bien peut-être que d’autres moyens existeront, comme les voitures à hydrogènes
-                par exemple, lorsque je relirai ces mots.
+            <h3 class="h3_all_pages">Necessary efforts</h3>
+            <p class="paragraphe_all_pages">
+                Today, at the age of 18, global warming is among the most serious things that 
+                Human activity has created. We all need to limit our unnecessary travel, and even encourage cycling or using public
+                 We all need to limit our unnecessary travel, and even encourage cycling or using public transport to produce as little greenhouse gas as possible.
+                greenhouse gases. These efforts are made so that we can all have a decent future. According to our
+                Politicians, in the future, thermal cars will no longer exist. They will all be replaced by
+                electric cars, or perhaps other means will exist, such as hydrogen cars, for example, when
+                for example, when I read these words again.
             </p>
-            <img src="/public/img/regret1.webp" alt="voiture hydrogène">
+            <img class="image_before_title" src="/public/img/regret1.webp" alt="voiture hydrogène">
+        </section>
+
+        <section>
+            <h3 class="h3_all_pages">The beginning of the end for humanity</h3>
+            <p class="paragraphe_all_pages">
+                I don't even know if I can't wait for that day to come. If the consumption of all human beings
+                 not decrease, we should reach temperatures that exceed 40°C in <a href="/FR/france.html">France</a> by the year
+                2050, snow may not exist anymore. And I don't want to find out about the other
+                events that global warming has in store for us and will bring about, such as the natural disasters
+                natural disasters that will multiply if the situation continues to worsen: melting ice, tsunamis
+                earthquakes and a whole bunch of other things.
+            </p>
+            <img class="image_before_title" src="/public/img/regret2.webp" alt="image rechauffement climatique">
         </section>
 
         <section>
 
-            <h3>Le début de la fin pour l’humanité</h3>
-            <p>
-                Je ne sais même pas si j’ai hâte que ce jour arrive. Si la consommation de tous les êtres humains ne
-                diminue pas, nous devrions atteindre des températures qui dépassent les 40 °C en France d’ici l’année
-                2050, la neige ne va peut-être plus exister finalement. Et puis je ne veux pas découvrir les autres
-                événement que le réchauffement climatique nous réserve et va engendrer comme les catastrophes
-                naturelles qui vont se multiplier si la situation ne cesse de s’aggraver : la fonte des glaces, les tsunamis,
-                les tremblements de terre et un tas d’autres choses.
+            <h3 class="h3_all_pages">A last hope for future generations</h3>
+            <p class="paragraphe_all_pages">
+                Anyway, we'll see what happens to us in the meantime. Maybe we'll be forced to move to a place more suitable for human life, a planet that hasn't been destroyed by its occupants yet. But what is certain is that all acts that produce CO2 are truly regrettable, I wonder how the following generations will discover the world that will have been left to them.
+                I wonder how the next generations will discover the world that will have been left to them. So I hope that when I read these words again in a few decades time, progress will have been made and we can be
+                progress will have been made and we will be in conditions that are much better than the one that
+                if nothing is done. Only the will of humans can tell us how the future will unfold.
+                will tell us how the future will unfold.
             </p>
-        <img src="/public/img/regret2.webp" alt="image rechauffement climatique">
+            <img class="image_between_paragraphes" src="/public/img/regret3.webp" alt="image  planete">
         </section>
+    </main>
 
-        <section>
+    <footer>
+        <div class="footer">
+            <div class="container-logo-with-info">
+                <div class="logo-with-info">
+                
+            
+                <div class="info">
+                    <ul>
+                        <li>Evan Moulin</li>
+                        <li> Group B2</li>
+                    </ul>
+                </div>
+            <div class="logo-mmi">
+                <img src="/public/img/logo-mmi1.png" alt="logo mmi">
+            </div>
+            </div>
+            <div class="list-mail-with-contact">
+                <ul>
+                    <li>
+                        <span class="mailto"><a href="mailto:evanmoulin25@gmail.com">evanmoulin25@gmail.com</a></span>
+                    </li>
+                    <li>Contact</li>
+                </ul> 
+            </div>
+                      
+           
+        </div>   
+           
 
-            <h3>Un dernier espoir pour les générations futures</h3>
+        <div class="logo-contact">
+            <a href="https://www.instagram.com/?hl=fr"></a><img src="/public/img/logo-insta.svg" alt="logo insta"></a>
+            <a href="https://www.facebook.com/"><img src="/public/img/logo-facebook.svg" alt="logo facebook"></a>
+            <a href="https://twitter.com/"><img src="/public/img/logo-twitter.svg" alt="logo twitter"></a> 
+
+        </div>
+        <div class="bas-de-footer">
             <p>
-                Enfin bon, on verra bien ce qui va nous tomber sur la tête d’ici là. Peut-être que nous serons obligés
-d’aller vivre dans un endroit plus adapté à la vie des humains, une planète qui n’aurait pas encore été
-détruite par ses occupants. Mais ce qui est sûr, c’est que tous les actes qui produisent du CO2 sont
- vraiment regrettables, je me demande bien comment les générations suivantes vont découvrir le monde qui
-leur aura été laisser. J’espère donc que quand je relirai ces mots dans quelques dizaines d’année, des
- progrès auront été réalisés et nous pourront être dans des conditions qui sont bien meilleurs que celle qui
- risque de nous arriver si rien ne bouge. Seul la volonté des humains pourra nous dire comment le futur se
-déroulera.
+                <span id="1">project carried out as part of an exercise</span>
+        
+                <span>
+                    teaching at the department 
+                    <a href="http://mmimontbeliard.com/">MMI of Montbéliard</a>
+                </span>  
             </p>
-
-            <img src="/public/img/regret3.webp" alt="image  planete">
-
-        </section>
-</main>
-
-<footer>
-   
-    <p>
-    Evan Moulin <br>
-    Groupe B2 <br>
-  <a href="mailto:evanmoulin25@gmail.com">evanmoulin25@gmail.com</a> <br>
-    Contact 
-</p>
- 
-    <a href="https://www.instagram.com/?hl=fr "><img src="/public/img/logo-insta.webp" alt="logo insta"></a>
-   <a href="https://twitter.com/"><img src="/public/img/logo-twitter.webp" alt="logo twitter"></a> 
-   <a href="https://www.facebook.com/"><img src="/public/img/logo-facebook.webp" alt="logo facebook"></a> 
-
-    <p>
-
-        projet réalisé dans le cadre d’un exercice
-        pédagogique au département <a href="http://mmimontbeliard.com/">MMI de Montbéliard</a> 
-    </p>
+        </div>
+    </div>
 </footer>
 </body>
 </html>

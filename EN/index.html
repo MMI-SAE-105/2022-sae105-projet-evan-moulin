@@ -7,110 +7,246 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>What have we become</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
+
 <body>
+ 
+    <header>
+        <span class="logo_header">
+            <a href="index.html"><img src="/public/img/logo-site.svg" alt="logo site"></a>
+        </span>
 
-       
-            <a href="index.html"><img src="/public/img/logo.svg" alt="logo site"></a>
-    
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">
-           <img src="/public/img/menu.svg" alt="menu burger"> 
-        </button>
-
-        <nav id="mainNav" x-show="menuIsOpen">
-
-
-        <ul>
-            <li><a href="france.html">France</a></li>
-            <li><a href="musique.html">Musique</a></li>
-            <li><a href="robots.html">Robots</a></li>
-            <li><a href="Lucy.html">Lucy</a></li>
-            <li><a href="technologie.html">Technologie</a></li>
-            <li><a href="regret.html">Climat</a></li>
-        </ul>
-
-        <ul>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="à-propos.html">À propos</a></li>
-            <li><a href="autres-projets.html">Autres projets</a></li>
-            <li><a href="glossaire.html">Glossaire</a></li>
-        </ul>
-
-        </nav>
-        
-            </header>
-
-            <main>
-                <div>
-                 <h1>what have we become?</h1>
-                    <img src="/public/img/Arrière-plan.webp" alt="Arrière plan">
-                    
-                </div>
-                
-                <p>À ce jour, j’ai 18 ans. J’écris ces notes, afin de comparer mes pensées avec le monde qui va nous entourer dans plusieurs années. Pour ces notes, je traite différents thèmes qui m’inspirent particulièrement.</p>
-
-                <h2>Lieux</h2>
-                <img src="/public/img/Lieu.webp" alt="photo tour eiffel">
-                <p>Le pays qu’est la France suscite en moi tellement de questions pour l’avenir. Sera t’elle à la hauteur des espérances que je lui consacre ?
-                    <a href="france.html">Lire l'article</a>
-                </p>
-                <h2>Musique</h2>
-                <img src="/public/img/musique.webp" alt="Les bons vivants">
-                <p>Rien n’est mieux que se rappeler de bons moments que l’on a passés dans notre jeunesse. Cette musique illustre parfaitement ces souvenirs.
-                    <a href="musique.html">Lire l'article</a>
-                </p>
-
-                <h2>Livre</h2>
-                <img src="/public/img/Livre.webp" alt="Livre">
-                <p>
-                    Je me suis souvent demandé quel rôle aurais les robots dans nos emplois  pour le futur, ce livre m’a t’il dit la vérité?
-                    <a href="robots.html">Lire l'article</a>
-                </p>
-
-                <h2>Film</h2>
-                <img src="/public/img/Lucy.webp" alt="Affiche film">
-                <p>
-                    L’humain ne cesse de développer la technologie, ce film nous apprend-il que la science-fiction est elle une réalité avancée ?
-                    <a href="Lucy.html">Lire l'article</a>
-                </p>
-                
-                <h2>Exploit</h2>
-                <img src="/public/img/exploit.webp" alt="Image technologie">
-            <p>
-                    L’évolution de la technologie ne risque pas de s’arrêter et ne cesse de nous surprendre. Comment sera la technologie dans l’avenir ?
-                <a href="technologie.html">Lire l'article</a>
-                </p>
+        <div class="drapeau">
+            <a href="/FR/index.html"><img src="/public/img/drapeau-francais.svg" alt="Drapeau français"></a>
+        </div>
+        <div class="button-menu">
             
-                <h2>Regret</h2>
-                <img src="/public/img/regret.webp" alt="Image nature">
+                <span class="material-icons" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" x-show=" ! menuIsOpen" x-transition:leave-end.delay.200ms x-transition:enter.delay.200ms> menu
+                </span>
+           
+        </div>
+
+        
+
+        <div class="menu-nav" id="mainNav" x-show="menuIsOpen" x-transition.duration.400ms.transition>
+            <div class="icon-croix" >
+                <span class="material-icons" @click="menuIsOpen = ! menuIsOpen"> 
+                    close
+                </span>
+            </div>
+            <div class="nav-list">
+                <nav>
+                    <ul>
+                        <li class="item-nav">
+                            <a href="france.html">France</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="musique.html">Music</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="robots.html">Robots</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="Lucy.html">Lucy</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="technologie.html">Technology</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="regret.html">Climat</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                    </ul>
+
+                    <div class="separateur"></div>
+
+                    <ul>
+                        <li class="item-nav">
+                            <a href="contact.html">Contact</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="à-propos.html">About us</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="autres-projets.html">Other projects</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="glossaire.html">Glossary</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+                    
+        <div class="arriere-plan">
+            <img class="image_homepage" src="/public/img/Arrière-plan.webp" alt="Arrière plan">
+        </div>  
+        <h1 class="h1_homepage">what have we become?</h1>
+        <p class="paragraphe_homepage">I am now 18 years old. I write these notes in order to compare my thoughts with the world that will surround us in several years. For these notes, I deal with different themes that particularly inspire me.</p>
+        <section>
+            <h2 class="all_title_homepage">Locations</h2>
+            <img class="image_homepage" src="/public/img/Lieu.webp" alt="photo tour eiffel">
+            <p class="paragraphe_homepage">The country that is France raises so many questions in me for the future. Will it live up to the expectations I have of it?</p> 
                 <p>
-                    Le réchauffement climatique est une conséquence très grave de l’activité humaine. L’humain, saura-t-il améliorer la situation dans le futur ?
-                    <a href="regret.html">Lire l'article</a>
+                    <span class="read_article">
+                        <a href="france.html">Read the article</a>
+                    </span>
+                
                 </p>
 
-            </main>
+        </section>
+    
+        <section>
+            
+                <h2 class="all_title_homepage">Music</h2>
+                <img class="image_homepage" src="/public/img/musique.webp" alt="Les bons vivants">
+                <p class="paragraphe_homepage">There is nothing better than remembering the good times we had in our youth. This music perfectly illustrates those memories.</p>
+                <p>
+                    <span class="read_article">
+                        <a href="musique.html">Read the article</a>
+                    </span>
+                
+                </p>
+        </section>
+    
 
-<footer>
+                
+        <section>
+            <h2 class="all_title_homepage">Book</h2>
+            <img class="image_homepage" src="/public/img/Livre.webp" alt="Livre">
+            <p class="paragraphe_homepage"> I have often wondered what role robots will play in our jobs in the future, did this book tell me the truth?</p>
+            <p>
+                <span class="read_article">
+                    <a href="robots.html">Read the article</a>
+                </span>
+            </p> 
+            
+            
+
+        </section>
+                
+
+        <section>
+            <h2 class="all_title_homepage">Film</h2>
+            <img class="image_homepage" src="/public/img/Lucy.webp" alt="Affiche film">
+            <p class="paragraphe_homepage">As humans continue to develop technology, does this film teach us that science fiction is an advanced reality?</p>
+            <p>
+                <span class="read_article">
+                    <a href="Lucy.html">Read the article</a>
+                </span>
+            </p>
+        </section>
+                
+        <section>
+
+            <h2 class="all_title_homepage">Exploit</h2>
+            <img class="image_homepage" src="/public/img/exploit.webp" alt="Image technologie">
+            <p class="paragraphe_homepage">The evolution of technology is unstoppable and never ceases to amaze us. What will technology be like in the future?</p>
+              <p> 
+                 <span class="read_article">
+                    <a href="technologie.html">Read the article</a>
+                </span>
+            </p>
+        </section>         
+                
+        <section>
+            <h2 class="all_title_homepage">Regret</h2>
+            <img class="image_homepage" src="/public/img/regret.webp" alt="Image nature">
+            <p class="paragraphe_homepage">Global warming is a very serious consequence of human activity. Will humans be able to improve the situation in the future?</p>
+            <p>
+                <span class="read_article">
+                    <a href="regret.html">Read the article</a>
+                </span>
+            </p>
+        </section>
+                
+
+    </main>
+        
+            <footer>
+                <div class="footer">
+                    <div class="container-logo-with-info">
+                        <div class="logo-with-info">
+                            
+                        
+                        <div class="info">
+                            <ul>
+                                <li>Evan Moulin</li>
+                                <li> Group B2</li>
+                            </ul>
+                        </div>
+                        <div class="logo-mmi">
+                            <img src="/public/img/logo-mmi1.png" alt="logo mmi">
+                        </div>
+                        </div>
+                        <div class="list-mail-with-contact">
+                            <ul>
+                                <li>
+                                    <span class="mailto"><a href="mailto:evanmoulin25@gmail.com">evanmoulin25@gmail.com</a></span>
+                                </li>
+                                <li>Contact</li>
+                            </ul> 
+                        </div>
+                                  
+                       
+                    </div>   
+                       
    
-        <p>
-        Evan Moulin <br>
-        Groupe B2 <br>
-      <a href="mailto:evanmoulin25@gmail.com">evanmoulin25@gmail.com</a> <br>
-        Contact 
-    </p>
-     
-        <a href="https://www.instagram.com/?hl=fr "><img src="/public/img/logo-insta.webp" alt="logo insta"></a>
-       <a href="https://twitter.com/"><img src="/public/img/logo-twitter.webp" alt="logo twitter"></a> 
-       <a href="https://www.facebook.com/"><img src="/public/img/logo-facebook.webp" alt="logo facebook"></a> 
+                    <div class="logo-contact">
+                        <a href="https://www.instagram.com/?hl=fr"><img src="/public/img/logo-insta.svg" alt="logo insta"> </a>
+                        <a href="https://www.facebook.com/"><img src="/public/img/logo-facebook.svg" alt="logo facebook"></a>
+                        <a href="https://twitter.com/"><img src="/public/img/logo-twitter.svg" alt="logo twitter"></a> 
 
-        <p>
-
-            projet réalisé dans le cadre d’un exercice
-            pédagogique au département <a href="http://mmimontbeliard.com/">MMI de Montbéliard</a> 
-        </p>
-</footer>
+                    </div>
+                    <div class="bas-de-footer">
+                        <p>
+                            <span id="1">project carried out as part of an exercise</span>
+                    
+                            <span>
+                                teaching at the department
+                                <a href="http://mmimontbeliard.com/">MMI of Montbéliard</a>
+                            </span>  
+                        </p>
+                    </div>
+                </div>
+            </footer>
             
 </body>
 </html>

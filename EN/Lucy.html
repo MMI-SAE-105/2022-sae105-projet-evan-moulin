@@ -7,148 +7,234 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>What have we become</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
 
 
-<header>
-       
-    <a href="index.html"><img src="/public/img/logo.svg" alt="logo site"></a>
+    <header>
+        <span class="title_header"><h4>What have we become?</h4></span>
+        <span class="logo">
+            <a href="index.html"><img src="/public/img/logo-site.svg" alt="logo site"></a>
+        </span>
 
-<button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">
-   <img src="/public/img/menu.svg" alt="menu burger"> 
-</button>
+        <div class="drapeau">
+            <a href="/FR/Lucy.html"><img src="/public/img/drapeau-francais.svg" alt="Drapeau français"></a>
+        </div>
+        <div class="button-menu">
+            
+                <span class="material-icons" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" x-show=" ! menuIsOpen" x-transition:leave-end.delay.200ms x-transition:enter.delay.200ms> menu
+                </span>
+           
+        </div>
 
-<nav id="mainNav" x-show="menuIsOpen">
+        
 
+        <div class="menu-nav" id="mainNav" x-show="menuIsOpen" x-transition.duration.400ms.transition>
+            <div class="icon-croix" >
+                <span class="material-icons" @click="menuIsOpen = ! menuIsOpen"> 
+                    close
+                </span>
+            </div>
+            <div class="nav-list">
+                <nav>
+                    <ul>
+                        <li class="item-nav">
+                            <a href="france.html">France</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="musique.html">Music</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="robots.html">Robots</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="Lucy.html">Lucy</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="technologie.html">Technology</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="regret.html">Climat</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                    </ul>
 
-<ul>
-    <li><a href="france.html">France</a></li>
-    <li><a href="musique.html">Musique</a></li>
-    <li><a href="robots.html">Robots</a></li>
-    <li><a href="Lucy.html">Lucy</a></li>
-    <li><a href="technologie.html">Technologie</a></li>
-    <li><a href="regret.html">Climat</a></li>
-</ul>
+                    <div class="separateur"></div>
 
-<ul>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="à-propos.html">À propos</a></li>
-    <li><a href="autres-projets.html">Autres projets</a></li>
-    <li><a href="glossaire.html">Glossaire</a></li>
-</ul>
-
-</nav>
+                    <ul>
+                        <li class="item-nav">
+                            <a href="contact.html">Contact</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="à-propos.html">About us</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="autres-projets.html">Other projects</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="glossaire.html">Glossary</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
     </header>
 
     <main>
 
-    <h1>Lucy - Luc Besson</h1>
+        <h1 class="first_title_all_pages">Lucy - Luc Besson</h1>
 
-    <h2>Une représentation de l’avenir</h2>
+        <h2 class="h2_all_pages">A representation of the future</h2>
 
-    <section>
-        <h3>Contexte du film </h3>
+        <section>
+            <h3 class="h3_all_pages">Context of the film </h3>
+            <p class="paragraphe_all_pages">
+                The movie Lucy is a movie that is created by French director Luc Besson and released on August 6, 2014, it is a movie that features a young a woman from Taiwan. In this movie, we learn that humans use only 10 percent of their total brain capacity. This girl, gets kidnapped by Chinese mobsters and these traffickers insert a drug into her abdomen. 
+            </p>
+            <img class="image_before_title" src="/public/img/film1.webp" alt="affiche film lucy">
+        </section>
 
-        <p>
-            Le film Lucy est un film qui est créé par le réalisateur français Luc Besson et qui sort le 6 août 2014, c’est un film qui met en scène une jeune une femme qui vient de Taiwan. Dans ce film, l’on apprend que les humains utilisent seulement 10 pour cent de la capacité totale de leur cerveau. Cette fille, se fait kidnapper par des mafieux chinois et ces trafiquants lui insèrent une drogue dans son abdomen. 
-        </p>
-        <img src="/public/img/film1.webp" alt="affiche film lucy">
-    </section>
-
-    <section>
-        <h3>Des capacité surhumaine</h3>
-
-        <p>
-            Cette drogue donne à la jeune fille des capacité qui nous sembles surhumaine puisqu’elle lui donne les cent pour cent de la capacité totale de son cerveau. Bien que ce film soit de la science-fiction ce film me fait réellement imaginer que l’humain peut être capable d’essayer réellement d’exploiter la totalité de la capacité totale du cerveau.
-        </p>
-        <img src="/public/img/film2.webp" alt="image de technologie">
-    </section>
+        <section>
+            <h3 class="h3_all_pages">Superhuman capacity</h3>
+            <p class="paragraphe_all_pages">
+                This drug gives the girl abilities that seem superhuman as it gives her one hundred percent of the total capacity of her brain. Although this film is science fiction, it really makes me imagine that humans may be able to really try to harness the full capacity of the brain.
+            </p>
+            <img class="image_before_title" src="/public/img/film2.webp" alt="image de technologie">
+        </section>
     
-    <section>
+        <section>
+            <h3 class="h3_all_pages">Science fiction becomes reality.</h3>
+            <p class="paragraphe_all_pages">
+                This film reminds me a bit of <a href="https://fr.wikipedia.org/wiki/Elon_Musk">Elon Musk</a>'s project which wants to implant chips in the brain that can allow us to remotely control computers, but also to cure neurological diseases such as paralysis. This project is sold as revolutionary, but is it really a good thing for human beings, we are not sure. So science fiction films are just films that imagine the future and are made to be made.  
+            </p>
+            <img class="image_before_title" src="/public/img/film3.webp" alt="image de technologie">
+        </section>
 
-        <h3>La science fiction devient réalité.</h3>
+        <section>
+            <h3 class="h3_all_pages">A future arrival of this technology.</h3>
+            <p class="paragraphe_all_pages">
+                Perhaps in a few decades we will all have a chip implanted in a part of our body and it will really treat neurological disorders. Tests have already been carried out on monkeys and a paralysed man has already volunteered to test this new chip. What we imagine as the future is finally happening little by little before our eyes, I really wonder how life will be in 30 years.
+            </p>
+        </section>
 
-        <p>
-            Ce film me fait un peu penser au projet d'Elon Musk qui souhaite implanter des puces dans le cerveau qui peut nous permettre de contrôler à distance des ordinateurs, mais aussi de soigner des maladies neurologiques telles que les paralysies. Ce projet est vendu comme révolutionnaire, mais est ce que c’est réellement une bonne chose pour l’être humain, nous n’en sommes pas sûres. Comme quoi, les films de science-fiction ne sont que des films qui imagine le futur et qui sont fait pour être réalisé.  
-        </p>
+        <h2 class="h2_filmographie">Filmography of Luc Besson</h2>
 
-        <img src="/public/img/film3.webp" alt="image de technologie">
+        <section>   
+            <h3 class="title_filmographie"><a href="https://fr.wikipedia.org/wiki/Le_Cinqui%C3%A8me_%C3%89l%C3%A9ment"></a> Le cinquième éléments</h3>
+            <img class="image_between_paragraphes"  src="/public/img/film4.webp" alt="affiche film">
+            <p class="paragraphes_filmographie">Release date 1996</p>
 
-    </section>
+            <p class="paragraphe_all_pages">
+                Egypt, 1914. Aliens recover four magic stones, symbols of the four elements, once entrusted to priests. Before leaving, the aliens promise that in 300 years they will bring back the precious stones. In the 23rd century, on their way to Earth, they are annihilated by the planet of evil. The inhabitants of this evil world, the Mangalores, seize the stones and race to Earth.
+            </p>
 
-    <section>
+        </section>
 
-        <h3>Une prochaine arrivée de cet technologie.</h3>
+        <section>   
 
-        <p>
-            Peut-être que d’ici quelques dizaines d’années nous allons tous avoir une puce implantée dans une partie de notre corps et elle permettra de réellement traiter les troubles neurologiques. D’ailleurs des tests ont déjà été réalisée sur des singes et un homme paralyser se porte déjà volontaire pour réaliser des test de cette nouvelle puces. Ce qu’on imagine comme le futur est finalement en train de se passer petit à petit sous nos yeux, je me demande vraiment comment la vie sera d’ici 30 ans.
-        </p>
+            <h3 class="title_filmographie"><a href="https://fr.wikipedia.org/wiki/Le_Grand_Bleu">Le Grand Bleu</a></h3>
+            <img class="image_between_paragraphes"  src="/public/img/film5.webp" alt="affiche film">
+            <p class="paragraphes_filmographie">Release date 1988</p>
 
-    </section>
+            <p class="paragraphe_all_pages">
+                Since childhood, there has been a rivalry between two diving fans, the Frenchman Jacques Mayol and the Italian Enzo Molinari. As adults, they continue to battle it out, descending deeper and deeper in free diving. One day, Jacques meets Johanna, who is working with a professor who has come to study the reactions of a body immersed in ice, and it's love at first sight.
+            </p>
 
-    <h2>Filmographie de Luc Besson</h2>
+        </section>
 
-<section>   
+        <section>   
+            <h3 class="title_filmographie"><a href="https://fr.wikipedia.org/wiki/Anna_(film,_2019)">Anna</a></h3>
+            <img class="image_between_paragraphes" src="/public/img/film6.webp" alt="affiche film">
+            <p class="paragraphes_filmographie"> Release date 2019</p>
+            <p class="paragraphe_all_pages">
+                Behind her stunning beauty, Anna Poliatova conceals an extraordinary strength and ability that makes her one of the most feared assassins in the world. With her new target in Paris, she sets out on her mission without backup and with the international authorities hot on her trail.
+            </p>
 
-    <h3>Le cinquième éléments</h3>
-        <img src="/public/img/film4.webp" alt="affiche film">
-<p>Date de sortie 1996</p>
-
-<p>
-    Egypte, 1914. Des extraterrestres récupèrent quatre pierres magiques, symboles des quatre éléments, jadis confiés à des prêtres. Avant de partir, les extraterrestres promettent que dans 300 ans, ils rapporteront les précieux cailloux. Au XXIIIe siècle, alors qu'ils font route vers la Terre, ils sont anéantis par la planète du mal. Les habitants de ce monde maléfique, les Mangalores, s'emparent des pierres et foncent vers la Terre.
-</p>
-
-</section>
-
-<section>   
-
-    <h3>Le Grand Bleu</h3>
-        <img src="/public/img/film5.webp" alt="affiche film">
-<p>Date de sortie 1988</p>
-
-<p>
-    Depuis l'enfance, une rivalité oppose deux fans de plongée, le Français Jacques Mayol et l'Italien Enzo Molinari. À l'âge adulte, ils continuent à s'affronter, descendant toujours plus profond, en apnée. Un jour, Jacques rencontre Johanna, qui travaille avec un professeur venu étudier les réactions d'un corps immergé sous la glace, et c'est le coup de foudre. 
-</p>
-
-</section>
-
-<section>   
-
-    <h3>Anna</h3>
-        <img src="/public/img/film6.webp" alt="affiche film">
-<p>Date de sortie 2019</p>
-
-<p>
-    Derrière sa beauté stupéfiante, Anna Poliatova dissimule une force et des aptitudes hors du commun qui font d'elle l'un des assassins les plus redoutés au monde. Sa nouvelle cible étant à Paris, elle entame sa mission sans renforts et avec les autorités internationales à ses trousses.
-</p>
-
-</section>
+        </section>
 
 
-</main>
+    </main>
 
-<footer>
-   
-    <p>
-    Evan Moulin <br>
-    Groupe B2 <br>
-  <a href="mailto:evanmoulin25@gmail.com">evanmoulin25@gmail.com</a> <br>
-    Contact 
-</p>
- 
-    <a href="https://www.instagram.com/?hl=fr "><img src="/public/img/logo-insta.webp" alt="logo insta"></a>
-   <a href="https://twitter.com/"><img src="/public/img/logo-twitter.webp" alt="logo twitter"></a> 
-   <a href="https://www.facebook.com/"><img src="/public/img/logo-facebook.webp" alt="logo facebook"></a> 
+    <footer>
+        <div class="footer">
+            <div class="container-logo-with-info">
+                <div class="logo-with-info">
+                
+            
+                <div class="info">
+                    <ul>
+                        <li>Evan Moulin</li>
+                        <li> Group B2</li>
+                    </ul>
+                </div>
+            <div class="logo-mmi">
+                <img src="/public/img/logo-mmi1.png" alt="logo mmi">
+            </div>
+            </div>
+            <div class="list-mail-with-contact">
+                <ul>
+                    <li>
+                        <span class="mailto"><a href="mailto:evanmoulin25@gmail.com">evanmoulin25@gmail.com</a></span>
+                    </li>
+                    <li>Contact</li>
+                </ul> 
+            </div>
+                      
+           
+        </div>   
+           
 
-    <p>
+        <div class="logo-contact">
+            <a href="https://www.instagram.com/?hl=fr"></a><img src="/public/img/logo-insta.svg" alt="logo insta"></a>
+            <a href="https://www.facebook.com/"><img src="/public/img/logo-facebook.svg" alt="logo facebook"></a>
+            <a href="https://twitter.com/"><img src="/public/img/logo-twitter.svg" alt="logo twitter"></a> 
 
-        projet réalisé dans le cadre d’un exercice
-        pédagogique au département <a href="http://mmimontbeliard.com/">MMI de Montbéliard</a> 
-    </p>
+        </div>
+        <div class="bas-de-footer">
+            <p>
+                <span id="1">project carried out as part of an exercise</span>
+        
+                <span>
+                    teaching at the department
+                    <a href="http://mmimontbeliard.com/">MMI of Montbéliard</a>
+                </span>  
+            </p>
+        </div>
+    </div>
 </footer>
 
 </body>

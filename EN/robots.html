@@ -7,108 +7,198 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>What have we become</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
 
 
-<header>
-       
-    <a href="index.html"><img src="/public/img/logo.svg" alt="logo site"></a>
+    <header>
+        <span class="title_header"><h4>What have we become?</h4></span>
+        <span class="logo">
+            <a href="index.html"><img src="/public/img/logo-site.svg" alt="logo site"></a>
+        </span>
 
-<button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">
-   <img src="/public/img/menu.svg" alt="menu burger"> 
-</button>
+        <div class="drapeau">
+            <a href="/FR/robots.html"><img src="/public/img/drapeau-francais.svg" alt="Drapeau français"></a>
+        </div>
+        <div class="button-menu">
+            
+                <span class="material-icons" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" x-show=" ! menuIsOpen" x-transition:leave-end.delay.200ms x-transition:enter.delay.200ms> menu
+                </span>
+           
+        </div>
 
-<nav id="mainNav" x-show="menuIsOpen">
+        
 
+        <div class="menu-nav" id="mainNav" x-show="menuIsOpen" x-transition.duration.400ms.transition>
+            <div class="icon-croix" >
+                <span class="material-icons" @click="menuIsOpen = ! menuIsOpen"> 
+                    close
+                </span>
+            </div>
+            <div class="nav-list">
+                <nav>
+                    <ul>
+                        <li class="item-nav">
+                            <a href="france.html">France</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="musique.html">Musiv</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="robots.html">Robots</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="Lucy.html">Lucy</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="technologie.html">Technology</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="regret.html">Climat</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                    </ul>
 
-<ul>
-    <li><a href="france.html">France</a></li>
-    <li><a href="musique.html">Musique</a></li>
-    <li><a href="robots.html">Robots</a></li>
-    <li><a href="Lucy.html">Lucy</a></li>
-    <li><a href="technologie.html">Technologie</a></li>
-    <li><a href="regret.html">Climat</a></li>
-</ul>
+                    <div class="separateur"></div>
 
-<ul>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="à-propos.html">À propos</a></li>
-    <li><a href="autres-projets.html">Autres projets</a></li>
-    <li><a href="glossaire.html">Glossaire</a></li>
-</ul>
+                    <ul>
+                        <li class="item-nav">
+                            <a href="contact.html">Contact</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="à-propos.html">About us</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="autres-projets.html">Other projects</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                        <li class="item-nav">
+                            <a href="glossaire.html">Glossary</a>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
-</nav>
+    </header>
 
-</header>
+    <main>
 
-<main>
+        <h1 class="first_title_all_pages">Les robots, mon emploi et moi</h1>
+        <h2 class="h2_all_pages">The actors of tomorrow</h2>
 
-    <h1>Les robots, mon emploi et moi</h1>
-    <h2>Les acteurs de demain</h2>
+        <section>
+            <h3 class="h3_all_pages">Context of the book</h3>
 
-<section>
-    <h3>Contexte du livre</h3>
+            <p class="paragraphe_all_pages">
+                "Les robots, mon emploi et moi", is a book written by <a href="https://www.lesechos.fr/@erwann-tison">Erwann Tison</a>.It is a book that was written in January 2019 and explains how robots will change the world of work, we discover the jobs in which humans will have to leave their places to robots.
+            </p>
+            <img class="image_before_title" src="/public/img/livre1.webp" alt="image livre">
+        </section>
 
-    <p>
-        Les robots, mon emploi et moi, est un livre écrit par Erwann Tison. C’est un livre qui a été écrit en janvier 2019 et qui explique comment les robots vont changer le monde du travail, nous découvrons les métiers dans lesquels les humains devront laisser leurs places aux robots.
-    </p>
+        <section>
+            <h3 class="h3_all_pages">Those most affected </h3>
+            <p class="paragraphe_all_pages"> 
+            According to the book, the jobs that will be replaced are not only those that require the least qualifications, but also jobs such as doctors and bankers could be replaced in the near future. The book shows that 73% of today's working population, i.e. 18.2 million people, will be directly affected, and of these 42% will see their jobs disappear completely.
+            </p>
+        </section>
 
-    <img src="/public/img/livre1.webp" alt="image livre">
+        <section>
+            <h3 class="h3_all_pages">an evil for a good</h3>
+            <p class="paragraphe_all_pages">Of course, the arrival of artificial intelligence will also improve many conditions, especially if it allows us to improve the level of medicine even more. I find it quite worrying to find out how all this is going to happen, maybe this technology won't do any good for humans and it will end up costing us a lot of money, or maybe artificial intelligence will finally allow us to develop even more, it will be interesting to see how humans will manage to cooperate. </p>
+            <img class="image_between_paragraphes" src="/public/img/livre2.webp" alt="image robots">
+            <p class="paragraphe_all_pages">
+                According to a study, 6 out of 10 French people are in favour of the arrival of artificial intelligence. They believe that it is an opportunity and that it will have a positive role in the medical field and in the fight against terrorism. What is certain is that the arrival of this technology will have positive and negative impacts. I only hope that we will be able to live with all these new features and that they will not create a lack of work for a large part of the workforce. Anyway... I will see when the time comes.
+            </p>
+        </section>
 
-</section>
+        <section>
+            <h3 class="h3_all_pages">Extract</h3>
+            <p class="paragraphe_all_pages">    
+                Which jobs will disappear in the short term? Is my job under threat? What changes will technological advances and the digital revolution bring about? Artificial intelligence, robotics, blockchain: the 4th industrial revolution is a protean, powerful, multi-sectoral revolution that will profoundly transform the world of work. Far from the anxiety-inducing speeches, this book takes a concrete look at the jobs of today and tomorrow, and suggests ways to reform them...   
+            </p>
+        </section>
 
-<section>
+    </main>
 
-    <h3>Les principaux concernés </h3>
+    <footer>
+        <div class="footer">
+            <div class="container-logo-with-info">
+                <div class="logo-with-info">
+                
+            
+                <div class="info">
+                    <ul>
+                        <li>Evan Moulin</li>
+                        <li> Group B2</li>
+                    </ul>
+                </div>
+                <div class="logo-mmi">
+                    <img src="/public/img/logo-mmi1.png" alt="logo mmi">
+                </div>
+            </div>
+            <div class="list-mail-with-contact">
+                <ul>
+                    <li>
+                        <span class="mailto"><a href="mailto:evanmoulin25@gmail.com">evanmoulin25@gmail.com</a></span>
+                    </li>
+                    <li>Contact</li>
+                </ul> 
+            </div>
+                      
+           
+        </div>   
+           
 
-    <p> 
-        D’après ce livre, on y apprend que les métiers qui seront remplacés ne sont pas seulement ceux qui demande le moins de qualification, mais on y apprend que des métiers comme les médecins ou encore les banquiers pourraient venir à être remplacé d’ici peu de temps. On y apprend que 73 % des actifs d’aujourd’hui à savoir 18,2 millions de personnes seront directement impactés et parmi ces personnes 42 % verront leur métier disparaître complètement.
-    </p>
+        <div class="logo-contact">
+            <a href="https://www.instagram.com/?hl=fr"></a><img src="/public/img/logo-insta.svg" alt="logo insta"></a>
+            <a href="https://www.facebook.com/"><img src="/public/img/logo-facebook.svg" alt="logo facebook"></a>
+            <a href="https://twitter.com/"><img src="/public/img/logo-twitter.svg" alt="logo twitter"></a> 
 
-</section>
-
-<section>
-    <h3>Un mal pour un bien </h3>
-
-    <p>Bien évidemment, l’arrivée de l’intelligence artificielle va aussi améliorer beaucoup de conditions notamment s'ils nous permettent d’améliorer encore plus le niveau de la médecine. Je trouve ça assez inquiétant de découvrir comment tout cela va se passer, peut-être que cette technologie n’apportera rien de bon pour l’homme et elle va finir par nous coûter très cher, ou alors peut-être que finalement l’intelligence artificielle va nous permettre de se développer encore plus, il sera intéressant de voir la façon dont les humains vont réussir à coopérer.</p>
-
-    <img src="/public/img/livre2.webp" alt="image robots">
-    <p>
-        D’après une étude 6 Français sur 10 sont favorable à l’arrivée de l’intelligence artificielle d’après eux, ils estiment que c’est une opportunité et qu’elle aura un rôle positif dans le domaine du médical, et dans la lutte contre le terrorisme. Ce qui est sur c’est que l’arrivée de cette technologie aura des impacts positifs et des impacts négatifs. J’espère seulement qu’on saura vivre avec toute ces nouveautés et qu’elle ne vont pas créer un manque de travail pour une grande partie des travailleurs. Enfin bref… Je vais bien voir quand le moment sera venu.
-    </p>
-</section>
-
-<section>
-    <h3>Extrait</h3>
-<p>    
-    Quels sont les emplois qui vont disparaître à court terme ? Mon poste, est-il menacé ? Quels sont les changements que vont entraîner les avancées technologiques et la révolution numérique ? Intelligence artificielle, robotique, blockchain : la 4e révolution industrielle est une révolution protéiforme, puissante, multisectorielle qui va transformer en profondeur le monde du travail. Loin des discours anxiogènes, ce livre s'intéresse concrètement aux métiers, ceux d'aujourd'hui et de demain, et propose des pistes de réformes...  
-</p>
-
-</section>
-
-</main>
-
-<footer>
-   
-    <p>
-    Evan Moulin <br>
-    Groupe B2 <br>
-  <a href="mailto:evanmoulin25@gmail.com">evanmoulin25@gmail.com</a> <br>
-    Contact 
-</p>
- 
-    <a href="https://www.instagram.com/?hl=fr "><img src="/public/img/logo-insta.webp" alt="logo insta"></a>
-   <a href="https://twitter.com/"><img src="/public/img/logo-twitter.webp" alt="logo twitter"></a> 
-   <a href="https://www.facebook.com/"><img src="/public/img/logo-facebook.webp" alt="logo facebook"></a> 
-
-    <p>
-
-        projet réalisé dans le cadre d’un exercice
-        pédagogique au département <a href="http://mmimontbeliard.com/">MMI de Montbéliard</a> 
-    </p>
+        </div>
+        <div class="bas-de-footer">
+            <p>
+                <span id="1">project carried out as part of an exercise</span>
+        
+                <span>
+                    teaching at the department
+                    <a href="http://mmimontbeliard.com/">MMI of Montbéliard</a>
+                </span>  
+            </p>
+        </div>
+    </div>
 </footer>
 
 </body>
