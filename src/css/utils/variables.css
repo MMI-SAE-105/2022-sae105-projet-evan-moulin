@@ -2,6 +2,10 @@
    /* Color styles */
     --primary: #B8D4FF ;
     --headerColor: #336FCC ;
+    --white: #ffffff ;
+    --black : #000000 ;
+    --greenPastel: #BDECB0 ;
+    --timelineColor: #14B6C1 ;
 
     /* text styles */   
     --text-XXL : 32px ; 

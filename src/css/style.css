@@ -34,7 +34,7 @@ Main
 contact
 **/
 .box {
-    background-color: rgb(255, 255, 255) ;
+    background-color: var(--white);
     margin-top: 70px;
     margin-left: 1%;
     margin-right: 1%;
@@ -97,7 +97,7 @@ contact
     margin-left: 2%;
 }
 .button {
-    background-color: #bdecb0;
+    background-color: var(--greenPastel);
     border-radius: 7px;
     margin-left: 40px;
     margin-top: 95px;
@@ -134,7 +134,7 @@ Main Homepage
     vertical-align: auto;
     margin-left: 22px;
     margin-top: 18px;
-    color: black;
+    color: var(--black);
     text-decoration: underline;
     text-align: var(--text-article);
 }
@@ -272,7 +272,7 @@ Main other pages
 }
 
 a {
-    color: black;
+    color: var(--black);
 }
 
 /**
@@ -295,7 +295,7 @@ timeline
   display: flex;
   order: 2;
   text-align: center;
-  color: #fff;
+  color: var(--white);
   font-size: 28px;
   flex-basis: 100px;
 }
@@ -303,7 +303,7 @@ timeline
   font-size: 20px;
   line-height: 70px;
   margin: auto;
-  background: #14b6c1;
+  background:var(--timelineColor) ;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -312,11 +312,11 @@ timeline
   text-align: center;
   padding: 20px;
   border-radius: 25px;
-  color: #000;
+  color: var(--black);
   order: 3;
   width: 80%;
   padding-left: 10px;
-  background: #fff;
+  background: var(--white);
 }
 .content {
   margin-bottom: 3%;

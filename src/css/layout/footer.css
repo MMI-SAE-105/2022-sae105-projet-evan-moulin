@@ -3,14 +3,14 @@
 .footer {
   
     
-    color: white;
+    color: var(--white);
     margin-left: 22px;
     margin-right: 22px;
 
 }
 
 footer{
-    background-color: black;
+    background-color:var(--black);
     width: 100%;
     height: 355px;
     padding-top: 43px;
@@ -29,7 +29,7 @@ footer{
 
 .mailto a {
     text-decoration: underline;
-    color: white
+    color: var(--white) 
     
 }
 
@@ -84,6 +84,6 @@ margin-bottom: 20px;
 }
 
 .bas-de-footer p span a {
-    color: white;
+    color: var(--white);
     text-decoration: underline;
 }

@@ -1,6 +1,6 @@
 
 header {
-    background-color: rgb(51, 111, 204);
+    background-color: var(--headerColor) ;
     position: fixed;
     height: 63px;
     width: 100%;

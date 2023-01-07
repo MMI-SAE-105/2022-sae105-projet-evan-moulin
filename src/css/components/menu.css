@@ -3,7 +3,7 @@
     margin: auto;
     margin-top: 0px;
     margin-right: 0px;
-    background-color:  rgb(51, 111, 204);
+    background-color: var(--headerColor);
     border-radius: 30px;
     width: 292px;
     height: 720px;
@@ -34,7 +34,7 @@
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: var(--black);
 }
     
 
@@ -48,7 +48,7 @@
 .separateur {
     position: absolute;
     width: 150px;
-    border: 0.5px solid black;
+    border: 0.5px solid var(--black);
     margin-left: 25px;
     margin-top: 15px;
 }
