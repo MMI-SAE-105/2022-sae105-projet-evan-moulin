@@ -1,0 +1,327 @@
+/**
+contact
+**/
+.box {
+    background-color: var(--white);
+    margin-top: 70px;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 499px;
+    width: 98%;
+    border-radius: 15px;
+    display: table;
+    vertical-align: auto;
+    
+    
+  }
+
+
+#contactez-nous {
+    text-align: center;
+    padding: 40px;
+    text-decoration: underline;
+
+}
+
+.prenom { 
+    margin-bottom: 40px;
+    margin-left: 20px;
+  }
+
+  .prenom input {
+    margin-left: 30px;
+  }
+
+  .nom {
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  .nom input {
+    margin-left: 52px;
+
+  }
+
+  .email {
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  .email input {
+    margin-left: 40px; ;
+  }
+
+  .telephone {
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  .telephone input{
+    margin-left: 12px; 
+  }
+  
+  .message {
+    margin-left: 20px;
+    margin-bottom: 40px
+  }
+
+  .message textarea {
+    margin-left: 20px;
+  }
+
+  .button {
+        background-color: var(--greenPastel);
+        border-radius: 7px;
+        margin-left: 0%;
+        margin-top: 25px;
+    }
+
+/**
+Title header 
+**/
+
+.title_header {
+    padding-top: 45px;
+    padding-left: 65px;
+    margin: auto;
+    
+}
+
+.title_header h4 {
+    font-size: var(--text-S);
+}
+
+/**
+Main Homepage
+**/
+
+.all_title_homepage {
+    text-align: center;
+    margin-bottom: 22px;
+    margin-top: 100px;
+    font-size: var(--text-XL);
+}
+
+.read_article a {
+    display: table;
+    vertical-align: auto;
+    margin-left: 22px;
+    margin-top: 18px;
+    color: var(--black);
+    text-decoration: underline;
+    text-align: var(--text-article);
+}
+
+.paragraphe_homepage {   
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-top: 20px;
+    font-size: var(--text-M);
+}
+
+
+.image_homepage {
+    width: 100%;
+    
+}
+
+.h1_homepage {
+    text-align: center;
+    font-size: var(--text-XXL);
+}
+
+/**
+Main other pages
+**/
+
+.first_title_all_pages {
+    padding-top: 80px;
+    text-align: center;
+    font-size: var(--text-XXL); 
+    
+}
+
+
+.image_between_title_paragraphes {
+   
+    margin: auto;
+    text-align: center;
+    display: flex;
+    margin-bottom: 22px;
+}
+
+.image_before_title {
+    
+    padding-top: 38px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+}
+
+.image_between_paragraphes {
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+}
+
+
+.h2_all_pages {
+    margin-top: 25px;
+    margin-left: 22px;  
+    font-size: var(--text-XL);
+    
+}
+
+.h3_all_pages {
+    
+    margin-left: 22px;
+    margin-top: 38px;
+    margin-bottom: 22px;
+    font-size: var(--text-L); 
+}
+
+.h2_filmographie {
+    margin-top: 75px;
+    margin-left: 22px;
+    font-size: var(--text-XL);
+}
+
+.title_filmographie {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 45px;
+    font-size: var(--text-L);
+    
+}
+
+.link_clip {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.link_clip p {
+    font-weight: bold;
+}
+
+.link_clip a {
+    margin-left: 22px;
+    margin-right: 22px;
+    font-size: small;
+}
+
+.title_timeline {
+    margin-top: 75px;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: var(--text-L);
+}
+
+.paragraphe_all_pages {
+    margin-left: 22px;
+    margin-right: 22px;
+    font-size: var(--text-article);
+    
+}
+.paragraphes_autres_projet {
+    text-align: center;
+    font-size: var(--text-article);
+}
+
+.title_autres_projet {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: var(--text-XL);
+}
+
+.paragraphe_a_propos {
+    margin-top: 40px;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+a {
+    color: var(--black);
+}
+
+/**
+timeline
+**/
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.single-box {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+}
+.date-area {
+  display: flex;
+  order: 2;
+  text-align: center;
+  color: var(--white);
+  font-size: 28px;
+  flex-basis: 100px;
+}
+.date-area>span {
+  font-size: 20px;
+  line-height: 70px;
+  margin: auto;
+  background:var(--timelineColor) ;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.content {
+  text-align: center;
+  padding: 20px;
+  border-radius: 25px;
+  color: var(--black);
+  order: 3;
+  width: 80%;
+  padding-left: 10px;
+  background: var(--white);
+}
+.content {
+  margin-bottom: 3%;
+}
+.content h2 {
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+
+@media (min-width: 640px) {
+    .content, .custom {
+      width: 40%;
+    }
+    .box-right .content {
+      order: 1;
+      padding-right: 10px;
+      border-radius: 25px;
+    }
+    .box-right .custom {
+      order: 3;
+    }
+  }
+  
+
+  /**
+  Filmographie
+  **/
+
+  .paragraphes_filmographie {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: var(--text-article);
+  }
