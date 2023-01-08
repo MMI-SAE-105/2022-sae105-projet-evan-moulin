@@ -28,52 +28,64 @@ contact
     margin-left: 20px;
   }
 
-  .prenom input {
+.prenom input {
     margin-left: 30px;
+    background-color: #D8D8D8;
+    border: 1px;
   }
 
-  .nom {
+.nom {
     margin-left: 20px;
     margin-bottom: 40px;
   }
 
-  .nom input {
+.nom input {
     margin-left: 52px;
-
+    background-color: #D8D8D8;
+    border: 1px;
   }
 
-  .email {
+.email {
     margin-left: 20px;
     margin-bottom: 40px;
   }
 
-  .email input {
+.email input {
     margin-left: 40px; ;
+    background-color: #D8D8D8;
+    border: 1px;
   }
 
-  .telephone {
+.telephone {
     margin-left: 20px;
     margin-bottom: 40px;
   }
 
-  .telephone input{
+.telephone input{
     margin-left: 12px; 
+    background-color: #D8D8D8;
+    border: 1px;
   }
   
-  .message {
+.message {
     margin-left: 20px;
     margin-bottom: 40px
   }
 
-  .message textarea {
+.message textarea {
     margin-left: 20px;
+    background-color: #D8D8D8;
+    border: 1px;
+    width: 150px;
+    height: 50px;
   }
 
-  .button {
+.button {
         background-color: var(--greenPastel);
         border-radius: 7px;
         margin-left: 0%;
         margin-top: 25px;
+        margin-bottom: 25px
     }
 
 /**
